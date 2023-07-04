@@ -1,0 +1,10 @@
+import pyfiglet
+
+def generate_fancy_text(text):
+    result = pyfiglet.figlet_format(text)
+    return result
+
+if __name__ == "__main__":
+    input_text = input("Enter your text: ")
+    fancy_text = generate_fancy_text(input_text)
+    print(fancy_text)
